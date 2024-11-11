@@ -4,3 +4,5 @@ git+https://github.com/openspp/openspp-modules@17.0#subdirectory=spp_service_poi
 git+https://github.com/openspp/openspp-modules@17.0#subdirectory=spp_programs
 git+https://github.com/openspp/openspp-modules@17.0#subdirectory=spp_entitlement_cash
 git+https://github.com/openspp/openspp-modules@17.0#subdirectory=spp_entitlement_in_kind
+
+# this is for testing
