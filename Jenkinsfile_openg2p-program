@@ -12,7 +12,7 @@ pipeline {
         stage('Activate Virtual Environment') {
             steps {
                 sh """
-                source ${VENV_PATH}
+                bash -c "source ${VENV_PATH}"}
                 """
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Restart Odoo Service') {
             steps {
                 sh """
-                sudo systemctl restart ${ODOO_SERVICE}
+                bash -c "systemctl restart ${ODOO_SERVICE}"
                 """
             }
         }
