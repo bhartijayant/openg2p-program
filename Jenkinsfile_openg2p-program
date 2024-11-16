@@ -12,7 +12,7 @@ pipeline {
         stage('Activate Virtual Environment') {
             steps {
                 sh """
-                bash -c "source ${VENV_PATH}"}
+                bash -c "source ${VENV_PATH}"
                 """
             }
         }
