@@ -9,7 +9,7 @@
                     type="button"
                     class="btn btn-primary o_list_button_add_program"
                     accesskey="p"
-                    title="Create a New Program"
+                    title="Create a New Program ====="
                     t-on-click="load_wizard"
                 >Create Program</button>
             </t>
