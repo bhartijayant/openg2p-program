@@ -71,7 +71,7 @@ Contributors include:
 
 * Edwin Gonzales ([Newlogic](https://newlogic.com))
 * Jeremi Joslin ([Newlogic](https://newlogic.com))
-* Michael Gonzales ([Newlogic](https://newlogic.com))
+* Jayant Gonzales ([Newlogic](https://newlogic.com))
 
 ## License
 
