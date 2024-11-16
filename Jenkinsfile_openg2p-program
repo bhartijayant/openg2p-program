@@ -12,7 +12,7 @@ pipeline {
 	stage('Syncing the files') {
 	   steps {
 		sh """
-                bash -c "rsync -av --exclude='.git' /opt/odoo17/odoo17/jenkins-agent/workspace/openg2p-program /opt/odoo17/odoo17/custom-addons/openg2p-program"
+                bash -c "rsync -av --exclude='.git' /opt/odoo17/odoo17/jenkins-agent/workspace/openg2p-program/ /opt/odoo17/odoo17/custom-addons/openg2p-program/"
                 """
 	   }
 	}
