@@ -1,0 +1,37 @@
+pipeline {
+    agent {
+		label '87-agent'
+	}
+
+    environment {
+        VENV_PATH = "/opt/odoo17/odoo17-venv/bin/activate"
+        ODOO_SERVICE = "odoo17"
+    }
+
+    stages {
+        stage('Activate Virtual Environment') {
+            steps {
+                sh """
+                source ${VENV_PATH}
+                """
+            }
+        }
+
+        stage('Restart Odoo Service') {
+            steps {
+                sh """
+                sudo systemctl restart ${ODOO_SERVICE}
+                """
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Odoo 17 deployed successfully!"
+        }
+        failure {
+            echo "Deployment failed."
+        }
+    }
+}
