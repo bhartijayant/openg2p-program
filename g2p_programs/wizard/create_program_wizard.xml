@@ -15,6 +15,7 @@ Part of OpenG2P. See LICENSE file for full copyright and licensing details.
                     <!-- STEP 1 -->
                     <group invisible="state == 'step2'">
                         <field name="name" />
+                        <field name="name" />
                         <field name="target_type" widget="radio" options="{'horizontal': true}" />
                         <field
                             name="currency_id"
